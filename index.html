@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30x30 Nonogram Game</title>
+    <link rel="stylesheet" href="style.css?ver=1">
+</head>
+<body>
+    <div id="game-container">
+        <div class="game-board">
+            <div class="corner-spacer">
+                <div class="title-controls">
+                    <h1>Nonogram</h1>
+                    <div class="controls">
+                        <select id="grid-size-select">
+                            <option value="5">5x5</option>
+                            <option value="10">10x10</option>
+                            <option value="15">15x15</option>
+                            <option value="20">20x20</option>
+                            <option value="25">25x25</option>
+                            <option value="30" selected>30x30</option>
+                        </select>
+                        <button id="generate-button">Generate</button>
+                    </div>
+                </div>
+            </div>
+            <div id="top-hints"></div>
+            <div id="left-hints"></div>
+            <div id="grid-container"></div>
+            <div class="button-container">
+                <button id="solve-button">Solve</button>
+                <button id="load-button">eg.30</button>
+                <button id="clear-button">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?ver=1"></script>
+</body>
+</html>
